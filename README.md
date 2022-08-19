@@ -4,12 +4,12 @@
 
 > 变量  
 > 控制结构 :
->> 顺序结构  
+> > 顺序结构  
 > > 分支  
 > > 循环结构
 >
 >    OOP（面向对象） :
->> 封装  
+> > 封装  
 > > 继承  
 > > 多态
 >
@@ -27,7 +27,7 @@
 > Java多线程/高并发
 >
 >   并发基础 :
->> 互斥同步  
+> > 互斥同步  
 > > 非阻塞同步  
 > > 指令重排  
 > > synchronized  
@@ -36,22 +36,22 @@
 >   线程
 >
 >   锁 :
->> 自旋锁  
+> > 自旋锁  
 > > 偏向锁  
 > > 可重入锁
 >
 >   线程池  
 > 并发容器  
 > JUC :
->> atomic（原子类）  
+> > atomic（原子类）  
 > > collections  
 > > executor  
 > > locks  
 > > tools（CountDownLatch，Exchanger，ThreadLocal，CyclicBarrier）
 >
 >  数据结构和算法 :
->> 数据结构 :
->>> 数组（稀疏数组）  
+> > 数据结构 :
+> > > 数组（稀疏数组）  
 > > > 队列  
 > > > 栈  
 > > > 链表  
@@ -59,9 +59,9 @@
 > > > 散列  
 > > > 堆  
 > > > 图
->>
->>   算法
->>> 排序（8种）  
+> >
+> >   算法
+> > > 排序（8种）  
 > > > 查找  
 > > > 分治  
 > > > 动态规划（背包问题）  
@@ -74,7 +74,7 @@
 > > > Dijkstra（最短路径）
 >
 >    设计模式（23种） :
->> 单例模式  
+> > 单例模式  
 > > 观察者模式  
 > > 工厂模式  
 > > 适配器模式  
@@ -85,7 +85,7 @@
 > > 其他（组合模式，桥接模式，原型模式...）
 >
 >    JVM :
->> JVM体系  
+> > JVM体系  
 > > 类加载过程/机制  
 > > 双亲委派机制/沙盒安全机制  
 > > JMM（Java内存模式）  
@@ -97,22 +97,23 @@
 ## 第三部分：JavaWEB
 
 > 前端基础 :
->> HTML  
+> > HTML  
 > > CSS  
 > > JavaScript  
 > > Ajax  
 > > JQuery
 >
 >    前端框架 :
->> VUE  
+> > VUE  
 > > React  
 > > Angular  
 > > bootstrap  
 > > Node.js
 >
 >    Java Web后端 :
->> Tomcat  
+> > Tomcat  
 > > Servlet  
+> > Thymeleaf
 > > JSP
 
 ## 第四部分：主流框架和项目管理
@@ -120,22 +121,22 @@
 > Linux（操作系统，必学必会）  
 > Nginx（做反向代理的WEB服务器）  
 > *SSM :
->> Spring（轻量级的容器框架）  
+> > Spring（轻量级的容器框架）  
 > > SpringMVC（分层web开发框架）  
 > > MyBatis（持久化框架）
 >
 >    项目管理 :
->> Maven  
+> > Maven  
 > > Git&GitHub  
 > > SVN
 >
 >    *数据库 :
->> Redis（中间件）  
+> > Redis（中间件）  
 > > MySQL  
 > > Oracle
 >
 >    其他框架 :
->> WebService（SOA）  
+> > WebService（SOA）  
 > > Activity（工作流框架/引擎）  
 > > Shiro（安全框架）  
 > > SpringSecurity（安全框架）  
@@ -148,27 +149,27 @@
 > Dubbo（RPC框架，阿里巴巴开源）  
 > FastDFS（分布式的文件系统）  
 > Docker（应用容器引擎）
->> *Spring家族
->>> SpringBoot（简化开发）  
+> > *Spring家族
+> > > SpringBoot（简化开发）  
 > > > SpringCloud（组件很多） :
->>>> Nacos（阿里巴巴，服务发现，配置，管理）  
+> > > > Nacos（阿里巴巴，服务发现，配置，管理）  
 > > > > Seata（阿里巴巴，分布式事务的中间件）  
 > > > > Sentinel（阿里巴巴，流量控制，熔断，系统负载保护）  
 > > > > GateWay（网关，限流，日志，监控，鉴权）  
 > > > > OpenFeign（服务间调用）
 >
 >    搜索引擎
->> ElasticSearch  
+> > ElasticSearch  
 > > Solr
 >
 >    中间件
->> MyCat（数据库中间件，分库分表）  
+> > MyCat（数据库中间件，分库分表）  
 > > ActiveMQ（消息中间件）  
 > > RabbitMQ（消息中间件）  
 > > KafKa（消息中间件）
 >
 >    日志分析与监控（ELK）
->> ElasticSearch（收集日志，存储数据）  
+> > ElasticSearch（收集日志，存储数据）  
 > > LogStash（分析日志）  
 > > Kibana（可视化）
 >
