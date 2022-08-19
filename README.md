@@ -158,17 +158,17 @@
 > > > > GateWay（网关，限流，日志，监控，鉴权）  
 > > > > OpenFeign（服务间调用）
 >
->    搜索引擎
+>    搜索引擎 :
 > > ElasticSearch  
 > > Solr
 >
->    中间件
+>    中间件 :
 > > MyCat（数据库中间件，分库分表）  
 > > ActiveMQ（消息中间件）  
 > > RabbitMQ（消息中间件）  
 > > KafKa（消息中间件）
 >
->    日志分析与监控（ELK）
+>    日志分析与监控（ELK） :
 > > ElasticSearch（收集日志，存储数据）  
 > > LogStash（分析日志）  
 > > Kibana（可视化）
