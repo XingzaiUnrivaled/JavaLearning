@@ -113,7 +113,7 @@
 >    Java Web后端 :
 > > Tomcat  
 > > Servlet  
-> > Thymeleaf
+> > Thymeleaf  
 > > JSP
 
 ## 第四部分：主流框架和项目管理
