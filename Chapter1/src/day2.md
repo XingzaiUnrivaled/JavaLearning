@@ -23,6 +23,9 @@ public class Hello {
 第二点，`公有类名`要与文件名一致。没错，你一个Java文件内可以有多个类，但是`公有类`
 只能有一个，就是带`public class [类名/文件名]`里面的类名，然后你还可以并行很多类像这样
 
+命名规则的话查看normal
+solutions.md里面就行
+
 ```java
 //唯一的public类，类名必须和文件名一致，不然就会报错
 public class Hello {
@@ -30,6 +33,7 @@ public class Hello {
     //是只会在看代码的阶段存在,编译后并不存在
     //但是我建议删掉注释，因为我打的是中文可能会出现编码问题
     //如果你会改编码的话那就是最好的，如果你不会的话删掉就不会出问题了
+    //或者你可以去看看normal solutions.md那个文件
     public static void main(String[] args) {
         /*
                 这个是多行注释使用杠星星杠的方式框柱
