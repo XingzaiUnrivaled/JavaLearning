@@ -2,8 +2,10 @@
 
 ## normal solutions 常用问题解决方案
 
-## day1 第一个Java程序
+## Day1 第一个Java程序
 
-## day2 认识类与对象
+## Day2 认识类与对象
 
-## day3 对类的深刻认识
+## Day3 对类的深刻认识
+
+## Day4 运算符和数据转换
