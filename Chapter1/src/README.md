@@ -15,3 +15,5 @@
 ## [Day6 数组](day6.md)
 
 ## [Day7 字符串](day7.md)
+
+## [Day8 方法与递归](day8.md)
