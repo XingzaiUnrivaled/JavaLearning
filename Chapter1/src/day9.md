@@ -57,6 +57,115 @@ public class Hello {
 
 ![](image/day9/2.png)
 
+但是不仅如此，构造器还有不少的东西，在介绍这个东西之前，我们得介绍一下一个关键字 `this` 看意思应该也能看懂一点就是 `这个`
+的意思，实际是指本对象，就和我们之前使用的 `Hello hello = new Hello()` 里面的 `hello` 就是这个的当前对象，this就是在这个对象里面指自己
+
+```java
+public class Hello {
+    //咱们使用属性来搞一下，现在初始化为50
+    public int i = 50;
+
+    public static void main(String[] args) {
+        Hello hello = new Hello();
+        System.out.println(hello.i);
+    }
+
+    public Hello() {
+        //这个就相当于外面的hello.i
+        this.i = 100;
+    }
+
+    public Hello(int a) {
+        System.out.println("调用的是带参数的构造器，所以值不变");
+    }
+
+}
+```
+
+![](image/day9/11.png)
+
+我们这里再教一个this的用法，就是我可以用this()
+然后里面带上参数或者不带参数，可以在构造器里面调用我另外一个重载的构造器，但是这里有要求，只能位于方法开始的第一行，其他会出问题，我们先看成功的再看失败的
+
+```java
+public class Hello {
+    public int i = 50;
+
+    public static void main(String[] args) {
+        Hello hello = new Hello(123);
+        System.out.println(hello.i);
+    }
+
+    public Hello() {
+        this.i = 100;
+    }
+
+    public Hello(int a) {
+        //这里要写在第一行
+        //就相当于是构造器然后通过重载根据我参数里面写或者不写来调用构造器
+        this();
+        System.out.println("调用的是带参数的构造器，所以值不变");
+    }
+}
+```
+
+![](image/day9/12.png)
+
+接下来就是出问题的，因为this()不在第一行的情况
+
+```java
+public class Hello {
+    public int i = 50;
+
+    public static void main(String[] args) {
+        Hello hello = new Hello(123);
+        System.out.println(hello.i);
+    }
+
+    public Hello() {
+        this.i = 100;
+    }
+
+    public Hello(int a) {
+        this.i = a;
+        this();
+        System.out.println("调用的是带参数的构造器，所以值不变");
+    }
+}
+```
+
+![](image/day9/13.png)
+
+还有个小知识点，就是我们的参数列表里的参数的命名如果和我们类里面的属性重名了，那我该如何区分和调用
+
+```java
+public class Hello {
+    public int i = 0;
+
+    public static void main(String[] args) {
+        Hello hello = new Hello(123);
+        System.out.println("有参构造器的i: " + hello.i);
+        Hello hello1 = new Hello();
+        System.out.println("无参构造器的i: " + hello1.i);
+    }
+
+    public Hello() {
+        i = 100;
+    }
+
+    public Hello(int i) {
+        //其实也很简单，我们只需要通过this.i就是调用我们类里面的属性了
+        //他取元素其实也是就近原则，假如我直接写i他只会取参数里的，想要使用类里的需要使用this
+        //自然，如果我们没有参数i的时候，自然可以直接写，因为在编译的时候
+        //会自动加上this.的
+        this.i = i;
+
+    }
+}
+```
+
+![](image/day9/14.png)
+
 ## 第二章 package关键字
 
 > 主要是确实就是普通方法的变形，没什么好说的，我们重点来到访问控制符，就是前面的那个public，但是我们虽然说要讲控制符，但是在访问控制符之前我们先讲一个东西，那就是package关键字
