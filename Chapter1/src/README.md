@@ -19,3 +19,5 @@
 ## [Day8 方法与递归](day8.md)
 
 ## [Day9 构造器与访问修饰符](day9.md)
+
+## [Day10 Day10 详讲static和面向对象——继承与Java世上最厉害的IDE——IDEA](day10.md)
