@@ -414,3 +414,7 @@ class Father {
 爷爷类，都是会有Object类里面所有的非私有方法的，所以比如说字符串的equals就是String这个类重写的Object类里的equals方法
 
 ![](image/day10/29.png)
+
+### [上一张](day9.md)
+### [下一章](day11.md)
+### [返回目录](README.md)

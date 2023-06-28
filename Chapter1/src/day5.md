@@ -317,3 +317,7 @@ public class Hello {
 
 ![](image/day5/5-13.png)  
 直接继续执行，跳过了break，但是打印也是只有9个了，因为也跳过了，就相当于执行到continue的时候就直接重新执行下一遍语句
+
+### [上一张](day4.md)
+### [下一章](day6.md)
+### [返回目录](README.md)

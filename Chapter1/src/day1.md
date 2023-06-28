@@ -64,3 +64,5 @@ public class Hello {
 
 Java程序的各个语句都需要在末尾加上英文的分号才算结束，程序的运行是顺序的
 
+### [下一章](day2.md)
+### [返回目录](README.md)
