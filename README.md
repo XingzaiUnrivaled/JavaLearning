@@ -1,6 +1,6 @@
 # Java学习路线(推荐)
 
-## [点我开始学习](/Chapter1/src)
+## [点我开始学习](/Chapter1/src/README.md)
 
 ## 第一部分：Java基础
 
