@@ -420,6 +420,6 @@ public class Hello {
 ![](image/day8/14.png)  
 这就是今天的彻底的内容了，希望大家能早日掌握好好提升自己的编程能力。
 
-### [上一张](day7.md)
+### [上一章](day7.md)
 ### [下一章](day9.md)
 ### [返回目录](README.md)

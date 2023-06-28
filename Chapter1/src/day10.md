@@ -415,6 +415,6 @@ class Father {
 
 ![](image/day10/29.png)
 
-### [上一张](day9.md)
+### [上一章](day9.md)
 ### [下一章](day11.md)
 ### [返回目录](README.md)

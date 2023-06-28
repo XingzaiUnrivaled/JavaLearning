@@ -477,6 +477,6 @@ public class Hello {
 
 也很长了，差不多结束了
 
-### [上一张](day3.md)
+### [上一章](day3.md)
 ### [下一章](day5.md)
 ### [返回目录](README.md)

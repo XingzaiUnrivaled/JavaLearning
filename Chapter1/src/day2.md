@@ -192,6 +192,6 @@ public class Hello {
 
 ![](image/day2/day2_7.png)
 
-### [上一张](day1.md)
+### [上一章](day1.md)
 ### [下一章](day3.md)
 ### [返回目录](README.md)

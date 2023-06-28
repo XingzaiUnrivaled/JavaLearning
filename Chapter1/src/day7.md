@@ -189,6 +189,6 @@ public class Hello {
 
 字符串暂时就先讲这么多内容了，只要你都会了就说明你对字符串了如指掌了，那对 `System.out.println()` 用起来会更加的得心应手
 
-### [上一张](day6.md)
+### [上一章](day6.md)
 ### [下一章](day8.md)
 ### [返回目录](README.md)
