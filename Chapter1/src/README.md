@@ -23,3 +23,5 @@
 ## [Day10 详讲static和面向对象——继承与Java世上最厉害的IDE——IDEA](day10.md)
 
 ## [Day11 面向对象——多态](day11.md)
+
+## [Day12 剖析static关键字与普通代码块和静态代码块还有final关键字](day12.md)
