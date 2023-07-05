@@ -1,8 +1,10 @@
-# ***Day7 字符串***
+# ***Day7 字符串与键盘输入***
 
 > 字符串作为所有程序都很重要的东西，这个东西必须好好的学习，在Java中String会比较好学习，比起C和C++里面会更加的简单，
 > 在Java之中也是很好理解的，因为底层已经封装好了char数组，也就是字符串  
 > ![](image/day7/7.png)
+
+## 第一章 字符串
 
 字符串的声明非常的简单，只需要使用使用String这个类作为数据类型即可， `String name = "XingZai"`
 ，String这个类是特殊的类，可以直接写值而不需要使用new关键字，这是在jdk1.2版本开始就优化了这个，可以直接写了，但是还是保留着的，而且是不一样的，待会就稍微浅讲一下。
@@ -188,6 +190,99 @@ public class Hello {
 字符串还有一个内容，那就是可以通过字符串转换其他类型，这个会在之后的常用类里面讲到，不少方法是放在包装类里的，之后学会了包装类之后，那就是真的完全拿捏了字符串了
 
 字符串暂时就先讲这么多内容了，只要你都会了就说明你对字符串了如指掌了，那对 `System.out.println()` 用起来会更加的得心应手
+
+## 第二章 键盘输入
+
+> 我们进行开发自然少不了要输入，首先我们想要输入需要引入一个东西，在我们说数组的时候，其实已经讲解过什么是引入，那就是import，在我们使用这个输入类的时候，我们就需要引入一下这个类，就和数组工具Arrays一样
+
+首先我们先说这个类在哪里，这个类在java.util.Scanner，没错这个类就叫做Scanner，然后我们引入了这个类就可以创建这个类的对象并进行使用了
+
+```java
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        //我们先来创建对象，这次我们需要在括号里添加东西了
+        Scanner scanner = new Scanner(System.in);
+        //scanner内有多种方法，我们根据需要选择对应的方法，比如我们要输入int类型那就使用nextInt
+        System.out.println("请输入:");
+        int i = scanner.nextInt();
+        System.out.println(i);
+    }
+}
+```
+
+![](image/day7/11.png)
+
+我们使用了之后，会出现光标卡住，这里其实就是在等待我们输入了，然后我们直接输入数字，因为我们使用的是int类型的键入
+
+![](image/day7/12.png)
+
+这样就完成了我们的输入，那如果你不想输入数字的话，输入了别的，然后代码里面写的是nextInt的话，那就会报错
+
+![](image/day7/13.png)
+
+这样就会报错，因为我们的nextInt只能接受int类型的输入，输入其他的就会报这样的错误，说是 输入类型适配错误异常，所以我们只需要调整代码或者是外部的输入就不会报错了
+
+我们可以使用的方法有但不限于这张图里面显示的方法
+
+![](image/day7/14.png)
+
+然后我们可以依次类推，是不是看到了除nextInt之外的nextDouble，nextFloat等等，其实都是获取对应类型的值的，我们还有特殊的两个，一个是next()
+，一个是nextLine，他们分别为空格结尾和回车作为结尾，然后返回的都是字符串类型
+
+```java
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入:");
+        String next = scanner.next();
+        System.out.println(next);
+    }
+}
+```
+
+![](image/day7/15.png)
+
+就和我说的一样，从空格开始就隔断了
+
+```java
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入:");
+        String next = scanner.nextLine();
+        System.out.println(next);
+    }
+}
+```
+
+![](image/day7/16.png)
+
+使用Line的时候就是在一行结束之后也就是碰到回车了之后才隔断
+
+```java
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入:");
+        for (int i = 0; i < 2; i++) {
+            String next = scanner.next();
+            System.out.println(next);
+        }
+    }
+}
+```
+
+![](image/day7/17.png)
+
+我们明显可以看到，空格自动隔开，如果后面还有获取，或者循环了一下这个获取，还是能获取到的，所以我们可以使用这种方式进行数组的输入啊等等，因为int，double，float等等都是和next是一样的，只有nextLine是特殊的。
 
 ### [上一章](day6.md)
 
