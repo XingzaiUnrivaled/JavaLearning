@@ -566,6 +566,6 @@ public class ArrayStreamTest {
 
 ### [上一章](day18.md)
 
-[//]: # (### [下一章]&#40;day20.md&#41;)
+### [下一章](day20.md)
 
 ### [返回目录](README.md)
