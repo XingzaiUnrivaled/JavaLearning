@@ -45,3 +45,11 @@
 ## [Day21 网络编程](day21.md)
 
 ## [Day22 反射](day22.md)
+
+## [Day23 Java8新特性](day23.md)
+
+## [Day24 Java11新特性](day24.md)
+
+## [Day25 Java17新特性](day25.md)
+
+## [Day26 Java21新特性](day26.md)
