@@ -434,7 +434,7 @@ public class OptionalExample {
 
 ## 七、新的时间日期 API
 
-有关日期，我们在[day16](day16.md)的时候讲过了，但是我们只讲了本地的时间，我们展示一下时区的。
+有关日期，我们在[day17](day17.md)的时候讲过了，但是我们只讲了本地的时间，我们展示一下时区的。
 
 ```java
 package newFeature8;
